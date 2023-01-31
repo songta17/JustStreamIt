@@ -8,11 +8,54 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>Header</header>
-  <section>Best Movie</section>
-  <section>Categoy 1</section>
-  <section>Categoy 2</section>
-  <section>Categoy 3</section>
+  <header class="header">
+    <div class="logo"><img src="img/logo_juststreamit.png" alt="JustStreamIt"></div>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#categories">Catégories</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="container">
+    <section id="caroussel">
+      <div class="container">
+        <img src="img/sample_toystory.png" alt="Best Movie">
+        <div class="title-carousel">Titre de la vidéo</div>
+        <button classs="play-button">Play</button>
+      </div>
+    </section>
+    <section id="highest-rated-films">
+      <hr>
+      <h2 class="category-title">Films les mieux notés</h2>
+      <hr>
+      <div class="section-content"></div>
+    </section>
+    <section id="category">
+      <div class="subcontainer">
+        <hr>
+        <h2 class="category-title">Top des films d'actions</h2>
+        <hr>
+        <div class="section-content"></div>
+      </div>
+    </section>
+    <section id="category">
+      <div class="subcontainer">
+        <hr>
+        <h2 class="category-title">Top des films d'animation</h2>
+        <hr>
+        <div class="section-content"></div>
+      </div>
+    </section>
+    <section id="category">
+      <div class="subcontainer">
+        <hr>
+        <h2 class="category-title">Top des films d'aventure</h2>
+        <hr>
+        <div class="section-content"></div>
+      </div>
+    </section>
+  </section>
   <script src="js/main.js"></script>
 </body>
 </html>
