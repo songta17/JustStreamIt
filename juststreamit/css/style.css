@@ -1,0 +1,107 @@
+body {
+  background-color: #1E1E1E;
+  width: auto;
+  margin:0;
+}
+
+/* HEADER */
+.header {
+  background-color: #2960A2;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.logo {
+  position: relative;
+  left: 10px;
+  top: 4px;
+}
+
+.menu {
+  flex-direction: column;
+}
+
+.nav-link {
+  display: inline;
+  font-size: 1.5em;
+  padding: 0 30px;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+.nav-link a {
+  color: white;
+  text-decoration : none;
+  list-style-type: none;
+}
+
+.nav-link a:hover {
+  color: white;
+  text-decoration : underline;
+  list-style-type: none;
+}
+
+/* CONTAINER ALL CATEGORIES */
+.container {
+  /* background-color: pink; */
+}
+
+/* CAROUSSEL */
+img {
+  width: 100%;
+}
+
+#caroussel {
+  position: relative;
+  width: 100%;
+}
+
+.caroussel-text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.caroussel-text-inside {
+  position: inherit;
+  align-items: column;
+  padding: 10px 0;
+}
+
+.title-carousel {
+  font-family: 'Iceberg', cursive;
+  font-size: 3em;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.play-button {
+  width: 240px;
+  height: 50px;
+  background-color: #E93427;
+  color: white;
+  font-size: 1.4em;
+  border-radius: 5px;
+}
+
+/* HIGHEST RATED FILMS */
+
+section {
+  /* margin: 0px 0; */
+}
+
+.category-title {
+  color: white;
+  font-family: 'Unica One', cursive;
+  display: flex;
+  justify-content: center;
+}
+
+.section-content {
+  height: 170px;
+  background-color: cadetblue;
+  margin: 10px 0;
+}
