@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JustStreamIt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Iceberg&family=Unica+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,17 +15,19 @@
     <div class="logo"><img src="img/logo_juststreamit.png" alt="JustStreamIt"></div>
     <nav class="menu">
       <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="#categories">Catégories</a></li>
+        <li class="nav-link"><a href="index.html">Accueil</a></li>
+        <li class="nav-link"><a href="#categories">Catégories</a></li>
       </ul>
     </nav>
   </header>
   <section class="container">
     <section id="caroussel">
-      <div class="container">
-        <img src="img/sample_toystory.png" alt="Best Movie">
-        <div class="title-carousel">Titre de la vidéo</div>
-        <button classs="play-button">Play</button>
+      <img class="coucou" src="img/sample_toystory.png" alt="Best Movie">
+      <div class="caroussel-text">
+        <div class="caroussel-text-inside">
+          <div class="title-carousel">TOY STORY</div>
+          <button class="play-button">PLAY</button>
+        </div>
       </div>
     </section>
     <section id="highest-rated-films">
@@ -31,29 +36,31 @@
       <hr>
       <div class="section-content"></div>
     </section>
-    <section id="category">
-      <div class="subcontainer">
-        <hr>
-        <h2 class="category-title">Top des films d'actions</h2>
-        <hr>
-        <div class="section-content"></div>
-      </div>
-    </section>
-    <section id="category">
-      <div class="subcontainer">
-        <hr>
-        <h2 class="category-title">Top des films d'animation</h2>
-        <hr>
-        <div class="section-content"></div>
-      </div>
-    </section>
-    <section id="category">
-      <div class="subcontainer">
-        <hr>
-        <h2 class="category-title">Top des films d'aventure</h2>
-        <hr>
-        <div class="section-content"></div>
-      </div>
+    <section id="categories">
+      <section id="category">
+        <div class="subcontainer">
+          <hr>
+          <h2 class="category-title">Top des films d'actions</h2>
+          <hr>
+          <div class="section-content"></div>
+        </div>
+      </section>
+      <section id="category">
+        <div class="subcontainer">
+          <hr>
+          <h2 class="category-title">Top des films d'animation</h2>
+          <hr>
+          <div class="section-content"></div>
+        </div>
+      </section>
+      <section id="category">
+        <div class="subcontainer">
+          <hr>
+          <h2 class="category-title">Top des films d'aventure</h2>
+          <hr>
+          <div class="section-content"></div>
+        </div>
+      </section>
     </section>
   </section>
   <script src="js/main.js"></script>
