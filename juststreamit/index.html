@@ -20,13 +20,19 @@
       </ul>
     </nav>
   </header>
-  <section class="container">
+  <main class="container">
     <section id="caroussel">
-      <img class="coucou" src="img/sample_toystory.png" alt="Best Movie">
+      <div class="best-movie-img" >
+          <img src="img/sample_toystory.png" alt="Best Movie" onclick="modalMovieDetails()">
+      </div>
       <div class="caroussel-text">
         <div class="caroussel-text-inside">
           <div class="title-carousel">TOY STORY</div>
-          <button class="play-button">PLAY</button>
+          <div class="btn-position">
+            <button class="play-button">PLAY</button>
+          </div>
+          <div class="description-carousel">
+            <p>Aucune description disponible!</p>
         </div>
       </div>
     </section>
@@ -62,7 +68,7 @@
         </div>
       </section>
     </section>
-  </section>
+  </main>
   <script src="js/main.js"></script>
 </body>
 </html>
