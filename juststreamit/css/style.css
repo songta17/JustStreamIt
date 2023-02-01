@@ -46,8 +46,16 @@ body {
 }
 
 /* CAROUSSEL */
-img {
+.best-movie-img img {
   width: 100%;
+  height: 300px;
+  object-fit: scale-down;
+}
+
+.best-movie-img {
+  border: 1px solid white;
+  height: 300px;
+  /* background-image: url("../img/sample_toystory.png"); */
 }
 
 #caroussel {
@@ -59,21 +67,28 @@ img {
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 300px;
+  width: 400px;
   display: flex;
   justify-content: center;
+  /* background-color: rgb(99, 21, 111); */
 }
 
 .caroussel-text-inside {
-  position: inherit;
+  /* position: inherit; */
   align-items: column;
   padding: 10px 0;
+  /* background-color: chartreuse; */
 }
 
 .title-carousel {
   font-family: 'Iceberg', cursive;
   font-size: 3em;
   color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-position {
   display: flex;
   justify-content: center;
 }
@@ -85,6 +100,11 @@ img {
   color: white;
   font-size: 1.4em;
   border-radius: 5px;
+}
+
+.description-carousel {
+  font-family: 'Iceberg', cursive;
+  color:white;
 }
 
 /* HIGHEST RATED FILMS */
