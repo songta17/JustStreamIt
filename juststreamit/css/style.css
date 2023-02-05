@@ -55,32 +55,30 @@ body {
 .best-movie-img {
   border: 1px solid white;
   height: 300px;
-  /* background-image: url("../img/sample_toystory.png"); */
+  background-image: url("../img/background-cinema.jpg");
+  background-size: contain;
 }
 
-#caroussel {
+#best-movie {
   position: relative;
   width: 100%;
 }
 
-.caroussel-text {
+.best-movie-text {
   position: absolute;
   top: 10px;
   left: 10px;
   width: 400px;
   display: flex;
   justify-content: center;
-  /* background-color: rgb(99, 21, 111); */
 }
 
-.caroussel-text-inside {
-  /* position: inherit; */
+.best-movie-text-inside {
   align-items: column;
   padding: 10px 0;
-  /* background-color: chartreuse; */
 }
 
-.title-carousel {
+.title-best-movie {
   font-family: 'Iceberg', cursive;
   font-size: 3em;
   color: white;
@@ -107,10 +105,115 @@ body {
   color:white;
 }
 
-/* HIGHEST RATED FILMS */
+/* MODAL */
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
 
-section {
-  /* margin: 0px 0; */
+.modal-container.active {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color:#333333d3;
+}
+
+.modal {
+  position: absolute;
+  width: 650px;
+  height: 580px;
+  border-radius: 5px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2960A2;
+  padding: 5px;
+  font-family: 'Iceberg', cursive;
+  color: white;
+}
+
+.modal-content {
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+
+.modal-content-left {
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.img-inside-modal {
+  margin-bottom: 5px;
+  background-color: rgb(207, 18, 18);
+}
+
+.modal-play-button {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 6px 0;
+  background-color: #E93427;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+}
+
+.rated-movie-details {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 6px 0;
+  background-color:rgb(32 32 40);
+  color: rgb(230, 255, 7);
+  font-family: 'Iceberg', cursive;
+}
+
+.modal-content-right {
+  font-family: 'ABeeZee', sans-serif;
+  width: 70%;
+  display: column;
+  color: white;
+  padding: 10px;
+  overflow: scroll;
+}
+
+.modal-content-right span {
+  font-weight: bold;
+  color:burlywood;
+}
+
+.modal h1 {
+  font-size: 1.6em;
+}
+
+.modal h2 {
+  font-size: 1.2em;
+}
+
+.modal-content-right div {
+  margin: 10px;
+}
+
+.close-modal {
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  cursor: pointer;
+  background: white;
+  color: blue;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .category-title {
@@ -120,8 +223,104 @@ section {
   justify-content: center;
 }
 
+#highest-rated-films {
+  width: 100%;
+}
+#top-action-films {
+  width: 100%;
+}
+
+.list-best-rated-movies {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 0;
+  float: left;
+}
+
+.list-best-rated-movies.active {
+  float: right;
+}
+
+.list-best-action-movies {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 0;
+  float: left;
+}
+
+.list-best-action-movies.active {
+  float: right;
+}
+
+.list-best-animation-movies {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 0;
+  float: left;
+}
+
+.list-best-animation-movies.active {
+  float: right;
+}
+
+.list-best-adventure-movies {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 0;
+  float: left;
+}
+
+.list-best-adventure-movies.active {
+  float: right;
+}
+
+.best-rated-movies-container {
+  display:inline-flex;
+}
+
 .section-content {
-  height: 170px;
-  background-color: cadetblue;
-  margin: 10px 0;
+  width: 850px;
+  height: 300px;
+  margin: 0 auto;
+  display: block;
+  justify-content: center;
+}
+
+.caroussel-container {
+  width: 850px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.btn-last {
+  background-color: rgb(67, 67, 67);
+  width:25px;
+  height: 300px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.middle {
+  width: 800px;
+  height: 300px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.btn-next {
+  background-color: rgb(67, 67, 67);
+  width: 25px;
+  height: 300px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
 }
