@@ -21,13 +21,13 @@
     </nav>
   </header>
   <main class="container">
-    <section id="caroussel">
-      <div class="best-movie-img" >
-          <img src="img/sample_toystory.png" alt="Best Movie" onclick="modalMovieDetails()">
+    <section id="best-movie">
+      <div class="best-movie-img">
+        <img class="modal-btn modal-trigger" src="img/background-cinema.jpg" alt="Best Movie" onclick="modalMovieDetails()">
       </div>
-      <div class="caroussel-text">
-        <div class="caroussel-text-inside">
-          <div class="title-carousel">TOY STORY</div>
+      <div class="best-movie-text">
+        <div class="best-movie-text-inside">
+          <div class="title-best-movie">Title of the best movie</div>
           <div class="btn-position">
             <button class="play-button">PLAY</button>
           </div>
@@ -36,39 +36,98 @@
         </div>
       </div>
     </section>
+
     <section id="highest-rated-films">
       <hr>
       <h2 class="category-title">Films les mieux notés</h2>
       <hr>
-      <div class="section-content"></div>
+      <div class="section-content">
+        <div class="caroussel-container">
+          <button class="btn-last" onclick="carousselToggleBestRated()"><</button>
+          <div class="middle">
+            <ul class="list-best-rated-movies"></ul>    
+          </div>
+          <button class="btn-next" onclick="carousselToggleBestRated()">></button>
+        </div>
+      </div>
     </section>
+
     <section id="categories">
-      <section id="category">
-        <div class="subcontainer">
-          <hr>
-          <h2 class="category-title">Top des films d'actions</h2>
-          <hr>
-          <div class="section-content"></div>
+      <section id="top-action-films">
+        <hr>
+        <h2 class="category-title">Top des films d'action</h2>
+        <hr>
+        <div class="section-content">
+          <div class="caroussel-container">
+            <button class="btn-last" onclick="carousselToggleBestAction()"><</button>
+            <div class="middle">
+              <ul class="list-best-action-movies"></ul>    
+            </div>
+            <button class="btn-next" onclick="carousselToggleBestAction()">></button>
+          </div>
         </div>
       </section>
-      <section id="category">
-        <div class="subcontainer">
-          <hr>
-          <h2 class="category-title">Top des films d'animation</h2>
-          <hr>
-          <div class="section-content"></div>
+
+      <section id="top-animation-films">
+        <hr>
+        <h2 class="category-title">Top des films d'animation</h2>
+        <hr>
+        <div class="section-content">
+          <div class="caroussel-container">
+            <button class="btn-last" onclick="carousselToggleBestAnimation()"><</button>
+            <div class="middle">
+              <ul class="list-best-animation-movies"></ul>    
+            </div>
+            <button class="btn-next" onclick="carousselToggleBestAnimation()">></button>
+          </div>
         </div>
       </section>
-      <section id="category">
-        <div class="subcontainer">
-          <hr>
-          <h2 class="category-title">Top des films d'aventure</h2>
-          <hr>
-          <div class="section-content"></div>
+
+      <section id="top-adventure-films">
+        <hr>
+        <h2 class="category-title">Top des films d'aventure</h2>
+        <hr>
+        <div class="section-content">
+          <div class="caroussel-container">
+            <button class="btn-last" onclick="carousselToggleBestAdventure()"><</button>
+            <div class="middle">
+              <ul class="list-best-adventure-movies"></ul>    
+            </div>
+            <button class="btn-next" onclick="carousselToggleBestAdventure()">></button>
+          </div>
         </div>
       </section>
     </section>
   </main>
+
+  <div class="modal-container">
+    <div class="overlay modal-trigger"></div>
+    <div class="modal">
+      <button class="close-modal" onclick="closeModal()">X</button>
+      <div class="modal-content">
+        <div class="modal-content-left">
+          <img class="img-inside-modal" src="img/test-img-modal.jpg" alt="Movie illustration">
+          <button class="modal-play-button">PLAY</button>
+          <div class="rated-movie-details">Note: 10/10</div>
+        </div>
+        <div class="modal-content-right">
+          <h1 class="title-movie-details">Information indisponible.</h1>
+          <div class="date-movie-details"><span>Date de sortie: </span>Information indisponible.</div>
+          <div class="duration-movie-details"><span>Durée: </span>Information indisponible.</div>
+          <div class="genre-movie-details"><span>Genre: </span>Information indisponible.</div>
+          <div class="director-movie-details"><span>Réalisateur: </span>Information indisponible.</div>
+          <div class="actors-movie-details"><span>avec </span>Information indisponible.</div>
+          <div class="score-imdb-movie-details"><span>Score imdb: </span>Information indisponible.</div>
+          <div class="country-movie-details"><span>Pays: </span>Information indisponible.</div>
+          <div class="world-income-movie-details"><span>Revenue au box office: </span>Information indisponible.</div>
+          <div class="description-movie-details">
+            <h2>Synopsis</h2>
+            <p>Information indisponible.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
   <script src="js/main.js"></script>
 </body>
 </html>
