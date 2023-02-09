@@ -10,7 +10,7 @@ const mainUrl = "http://localhost:8000/api/v1/titles"
 async function fetchTopMovie() {
   var topMovieTitle = document.getElementsByClassName('title-best-movie')[0]
   var topMovieImg = document.getElementsByClassName('best-movie-img')[0].getElementsByTagName("img")[0];
-  await fetch(mainUrl + "?sort_by=-imdb_score")
+  fetch(mainUrl + "?sort_by=-imdb_score")
     .then(response => response.json())
     .then(data => {
       topMovieTitle.innerHTML = data["results"][0]["title"];
@@ -27,8 +27,7 @@ async function fetchTopMovie() {
 // Fetch the description of a movie
 async function fetchTopMovieDescription(url) {
   var topMovieDescription = document.getElementsByClassName('description-carousel')[0].getElementsByTagName("p")[0];
-
-  await fetch(url)
+  fetch(url)
     .then(response => response.json())
     .then(data => {
       if (data["description"] != null)
@@ -80,7 +79,7 @@ async function fetchModalData(id) {
   var modalContentWorldIncome = document.getElementsByClassName('world-income-movie-details')[0];
   var modalContentDescription = document.getElementsByClassName('description-movie-details')[0];
 
-  await fetch(mainUrl + "/" + id)
+  fetch(mainUrl + "/" + id)
   .then(response => response.json())
   .then(data => {
     if (data["image_url"] != null)
