@@ -20,8 +20,8 @@
       </ul>
     </nav>
   </header>
-  <main class="container">
-    <section id="best-movie">
+  <main class="container" id="main">
+    <div id="best-movie">
       <div class="best-movie-img">
         <img class="modal-btn modal-trigger" src="img/background-cinema.jpg" alt="Best Movie" onclick="modalMovieDetails()">
       </div>
@@ -33,37 +33,36 @@
           </div>
           <div class="description-carousel">
             <p>Aucune description disponible!</p>
+          </div>
         </div>
       </div>
-    </section>
-
+    </div>
     <section id="highest-rated-films">
       <hr>
       <h2 class="category-title">Films les mieux notés</h2>
       <hr>
       <div class="section-content">
         <div class="caroussel-container">
-          <button class="btn-last" onclick="carousselToggleBestRated()"><</button>
+          <button class="btn-last" onclick="carousselToggleBestRated()">&lt;</button>
           <div class="middle">
             <ul class="list-best-rated-movies"></ul>    
           </div>
-          <button class="btn-next" onclick="carousselToggleBestRated()">></button>
+          <button class="btn-next" onclick="carousselToggleBestRated()">&gt;</button>
         </div>
       </div>
     </section>
-
-    <section id="categories">
+    <div id="categories">
       <section id="top-action-films">
         <hr>
         <h2 class="category-title">Top des films d'action</h2>
         <hr>
         <div class="section-content">
           <div class="caroussel-container">
-            <button class="btn-last" onclick="carousselToggleBestAction()"><</button>
+            <button class="btn-last" onclick="carousselToggleBestAction()">&lt;</button>
             <div class="middle">
               <ul class="list-best-action-movies"></ul>    
             </div>
-            <button class="btn-next" onclick="carousselToggleBestAction()">></button>
+            <button class="btn-next" onclick="carousselToggleBestAction()">&gt;</button>
           </div>
         </div>
       </section>
@@ -74,11 +73,11 @@
         <hr>
         <div class="section-content">
           <div class="caroussel-container">
-            <button class="btn-last" onclick="carousselToggleBestAnimation()"><</button>
+            <button class="btn-last" onclick="carousselToggleBestAnimation()">&lt;</button>
             <div class="middle">
               <ul class="list-best-animation-movies"></ul>    
             </div>
-            <button class="btn-next" onclick="carousselToggleBestAnimation()">></button>
+            <button class="btn-next" onclick="carousselToggleBestAnimation()">&gt;</button>
           </div>
         </div>
       </section>
@@ -89,15 +88,15 @@
         <hr>
         <div class="section-content">
           <div class="caroussel-container">
-            <button class="btn-last" onclick="carousselToggleBestAdventure()"><</button>
+            <button class="btn-last" onclick="carousselToggleBestAdventure()">&lt;</button>
             <div class="middle">
               <ul class="list-best-adventure-movies"></ul>    
             </div>
-            <button class="btn-next" onclick="carousselToggleBestAdventure()">></button>
+            <button class="btn-next" onclick="carousselToggleBestAdventure()">&gt;</button>
           </div>
         </div>
       </section>
-    </section>
+    </div>
   </main>
 
   <div class="modal-container">
