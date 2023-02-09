@@ -297,7 +297,8 @@ body {
 }
 
 .btn-last {
-  background-color: rgb(67, 67, 67);
+  /* background-color: rgb(67, 67, 67); */
+  background: linear-gradient(#1E1E1E, #504f4f, #1E1E1E);
   width:25px;
   height: 300px;
   display: inline-flex;
@@ -305,6 +306,7 @@ body {
   align-items: center;
   color: white;
   cursor: pointer;
+  border: #1E1E1E;
 }
 
 .middle {
@@ -315,7 +317,8 @@ body {
 }
 
 .btn-next {
-  background-color: rgb(67, 67, 67);
+  /* background-color: rgb(67, 67, 67); */
+  background: linear-gradient(#1E1E1E, #504f4f, #1E1E1E);
   width: 25px;
   height: 300px;
   display: inline-flex;
@@ -323,4 +326,5 @@ body {
   align-items: center;
   color: white;
   cursor: pointer;
+  border: #1E1E1E;
 }
